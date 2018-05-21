@@ -129,7 +129,7 @@ BEGIN
 		clock <= '0';
 		wait for 5 ns;
 
-		address <= X"00000200";
+		address <= X"00000014";
 		dataIn  <= X"BAADBEEF";
 		we      <= '1';
 		clock <= '1';
@@ -147,11 +147,11 @@ BEGIN
 		clock <= '0';
 		wait for 5 ns;
 
-		address <= X"00000001";
-		clock <= '1';
-		wait for 5 ns;
-		clock <= '0';
-		wait for 5 ns;
+		--address <= X"00000001";
+		--clock <= '1';
+		--wait for 5 ns;
+		--clock <= '0';
+		--wait for 5 ns;
 
 		address <= X"00000004";
 		clock <= '1';
@@ -183,11 +183,11 @@ BEGIN
 		clock <= '0';
 		wait for 5 ns;
 
-		address <= X"00000200";
-		clock <= '1';
-		wait for 5 ns;
-		clock <= '0';
-		wait for 5 ns;
+		--address <= X"00000200";
+		--clock <= '1';
+		--wait for 5 ns;
+		--clock <= '0';
+		--wait for 5 ns;
 
 		-- Register Bank tests
 		dataIn   <= X"11111111";
